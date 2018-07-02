@@ -1,18 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
+ 
 int main()
 {
-  int t;string s;
-vector<string> p;
-  cin>>t;
-  
-  for(int i=0;i<t;i++)
-  {
-   cin>>s;
-   p.push_back(s);
-  }
-    for(int i=p.size()-1;i>=0;i--)
-     cout<<p[i]<<" ";
-  
+    int x1,y1,x2,y2;
+    cin>>x1>>y1>>x2>>y2;
+    if(y1==y2)
+      cout<<"Horizontal";
+    else if(x1==x2)
+      cout<<"Vertical";
+    else
+    cout<<"Try again";
+    return 0;
 }
-
